@@ -39,22 +39,22 @@ function floating_point(user_input, type) {
  	 	     location += 1;
  	 	     
  	 	     break;
- 	     }
- 	   }
+     }
+  }
  	  	stringfied = "";
- 	 	}
+ 	 }
  	 	
  	 	if(where.length != 0 && where.length != undefined) {
  	  	let informations = [true, where]; 
  	 	  
  	 	  return informations;
  	 
- 	 } else if(where.length === undefined || where.length === 0) {
+  } else if(where.length === undefined || where.length === 0) {
  	 	   let information = [false];
  	    
  	     return information;
- 	 }
- 	}
+        }
+    }
 }
 
 // This is where I get all the dividers of a given number. All dividers ain't needed though.
@@ -80,7 +80,7 @@ function get_primes_dividers_of(choose_number, covering, spot) {
 	   if(primes_adresses === 2) // This line takes off way much the subsystems performance, it is not a must-include feature though. Here I specify that i just wanna get up to the second lowest divider.
       break;
   
-	}
+ }
   // Some important specifications. 
   if((covering === 1 && (((spot != undefined && spot != 0) && (spot < (primes.length + 1)) || (spot > primes.length))) || (covering === 1 && (spot === undefined || spot === 0)))) {
   	
@@ -111,7 +111,7 @@ function get_primes_dividers_of(choose_number, covering, spot) {
 	    
 	    return '\0';
 	
-	 } else if((covering || spot) != (((covering === undefined || covering === 0 || (covering != 1 && covering != 0)) && (spot === 0 || spot === 1 || spot === undefined)) || (covering === undefined && spot === undefined) || spot === 0)) {
+     } else if((covering || spot) != (((covering === undefined || covering === 0 || (covering != 1 && covering != 0)) && (spot === 0 || spot === 1 || spot === undefined)) || (covering === undefined && spot === undefined) || spot === 0)) {
   	
   	 process.stdout.write("\n> No preferences set, so there're no elements to show.\n");
 	   return '\0';
