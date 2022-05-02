@@ -437,7 +437,7 @@ function special_case_of(unique) {
      if(floating_point(coeficients[(float_dumper[1][cluster])], "first-option") != false) {
  			 
        if(coeficients[(float_dumper[1][cluster])].toFixed(0) == 1 || coeficients[(float_dumper[1][cluster])].toFixed(0) == -1)
-         coeficients[(float_dumper[1][cluster])] = special_case_of(coeficients[(float_dumper[1][cluster])].toFixed(0));
+          coeficients[(float_dumper[1][cluster])] = special_case_of(coeficients[(float_dumper[1][cluster])].toFixed(0));
  			 
   else
     coeficients[(float_dumper[1][cluster])] = coeficients[(float_dumper[1][cluster])].toFixed(0);
